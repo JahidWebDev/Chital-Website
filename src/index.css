@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.icon-float {
+  animation: float 2.5s ease-in-out infinite;
+}
+@keyframes smoothFloatSideZoom {
+  0%, 100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(12px) scale(1.0);
+    opacity: 0.98;
+  }
+  50% {
+    transform: translateX(0) scale(1.02);
+    opacity: 0.96;
+  }
+  
+}
+
+.banner-side-zoom {
+  animation: smoothFloatSideZoom 5s ease-in-out infinite;
+}
+
