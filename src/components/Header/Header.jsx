@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import logo from "../../images/Chittal-Logo.png"; // ⬅️ replace with your actual path
 import Bannericon from "../../images/Home-img/Veku&Piller.png"; // ⬅️ replace with your actual path
 import { FaWhatsapp, FaDiscord } from "react-icons/fa";
@@ -33,6 +33,7 @@ const logos = [
 ];
 
 const Header = () => {
+  const { id } = useParams();
   const [shuffled, setShuffled] = useState(logos);
 
   // Shuffle logos every 3 seconds
@@ -105,7 +106,7 @@ const Header = () => {
         </div>
 
         {/* Menu */}
-        <nav className="ml-auto mr-20">
+        <nav className="ml-auto mr-20 mt-4">
           <ul className="hidden md:flex items-end gap-8 text-[16px] text-gray-300">
             <li className="text-[#C8A46C] cursor-pointer">
               <Link to="/">Home</Link>
@@ -437,10 +438,13 @@ const Header = () => {
                 measurable growth in search engine dominance.
               </p>
 
-              <div className="flex items-center gap-2 text-[#C8A46C] font-medium cursor-pointer hover:underline">
-                <p>View Details</p>
-                <span>➜</span>
-              </div>
+                 <Link to={"/seo-details"}>
+
+      <div className="flex items-center gap-2 text-[#C8A46C] font-medium cursor-pointer hover:underline">
+        <p>View Details</p>
+        <span>➜</span>
+      </div>
+    </Link>
             </div>
 
             {/* Card 2 – Google Merchant Center */}
@@ -458,10 +462,12 @@ const Header = () => {
                 sell.
               </p>
 
-              <div className="flex items-center gap-2 text-[#C8A46C] font-medium cursor-pointer hover:underline">
-                <p>View Details</p>
-                <span>➜</span>
-              </div>
+              <Link to="/gmc-details">
+      <div className="flex items-center gap-2 text-[#C8A46C] font-medium cursor-pointer hover:underline">
+        <p>View Details</p>
+        <span>➜</span>
+      </div>
+    </Link>
             </div>
 
             {/* Card 3 – Google + Social Ads */}
@@ -479,10 +485,12 @@ const Header = () => {
                 your brand is always visible.
               </p>
 
-              <div className="flex items-center gap-2 text-[#C8A46C] font-medium cursor-pointer hover:underline">
-                <p>View Details</p>
-                <span>➜</span>
-              </div>
+          <Link to="/ads-details">
+      <div className="flex items-center gap-2 text-[#C8A46C] font-medium cursor-pointer hover:underline">
+        <p>View Details</p>
+        <span>➜</span>
+      </div>
+    </Link>
             </div>
           </div>
         </div>
