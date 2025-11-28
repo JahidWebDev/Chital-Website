@@ -106,7 +106,7 @@ const Header = () => {
         </div>
 
         {/* Menu */}
-        <nav className="ml-auto mr-20 mt-4">
+        <nav className="ml-auto mr-20 ">
           <ul className="hidden md:flex items-end gap-8 text-[16px] text-gray-300">
             <li className="text-[#C8A46C] cursor-pointer">
               <Link to="/">Home</Link>
@@ -181,10 +181,10 @@ const Header = () => {
             </div>
             <div>
               <div>
-                <div className="pt-35 ml-[444px] z-999">
+                <div className="pt-35 ml-[410px] z-999">
 <img
   src={Bannericon}
-  alt=""
+  alt="Bannericon"
   className="w-[550px] h-[400px] banner-side-zoom"
 />
 
