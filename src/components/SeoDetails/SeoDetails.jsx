@@ -7,6 +7,7 @@ import { MdEmail } from "react-icons/md";
 import logo from "../../images/Chittal-Logo.png";
 import optimization from "../../images/SeoDetailsimg/Man-Optimization-Ranking .png";
 import SEOGraphic from "../../images/SeoDetailsimg/SEO.png";
+import Scearch from "../../images/SeoDetailsimg/Scearch-Buy-Online.png";
 
 const SeoDetails = () => {
   const [hideHeader, setHideHeader] = useState(false);
@@ -82,7 +83,7 @@ const SeoDetails = () => {
       </header>
 
       {/* =================== SECTION CONTENT =================== */}
-      <section className="py-28 bg-white mt-28">
+      <section className="pt-28 bg-white mt-28">
         <div className="max-w-[1550px] mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-7">
             <h3 className="text-[45px] font-semibold text-gray-900 leading-snug">
@@ -216,6 +217,51 @@ const SeoDetails = () => {
             </div>
           </div>
         </section>
+      <section className="bg-[#F6F6F6] py-30 px-4">
+  <div className="max-w-[1550px] mx-auto">
+    
+    {/* Top Section */}
+    <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+      
+      {/* Left Image */}
+      <div className="w-full lg:w-1/2 flex justify-center ml-5">
+        <img src={Scearch} alt="SEO" className="w-[500px] lg:w-[600px]" />
+      </div>
+
+      {/* Right Text */}
+     <div className="w-full lg:w-1/2 text-center lg:text-right">
+  <h1 className="text-[32px] mr-27 md:text-[40px] lg:text-[55px] font-bold leading-tight text-[#2F2927]">
+    Your Website{" "}
+    <span className="bg-[#2F2927] px-2 py-1 rounded-md text-[#C8A16E]">
+      Number-1
+    </span>{" "}
+    <br className="hidden lg:block" />
+    Search Engine Position <br className="hidden lg:block" />
+    Is Waiting!
+  </h1>
+</div>
+
+
+    </div>
+
+    {/* Paragraph */}
+   <p className="mt-8  text-[20px] text-[#4f4f4f] text-center ml-50 w-[1200px]">
+  Get your <span className="font-bold text-[#2F2927]">FREE SEO Audit</span> today and discover how fast your business can grow 
+  with the right optimization strategy.
+</p>
+
+
+    {/* Button */}
+    <div className="mt-8 flex justify-center">
+      <button className="bg-[#C8A16E] hover:bg-[#b38b5b] text-black font-medium px-6 py-3 rounded-md transition">
+        Get a Free Audit
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
       </section>
     </>
   );

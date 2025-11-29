@@ -17,7 +17,7 @@ export default function ScrollToTop() {
       } else {
         window.scrollTo({ top: 0 });
       }
-    }, 100);
+    },300);
 
     return () => clearTimeout(timer);
   }, [location.key]);
